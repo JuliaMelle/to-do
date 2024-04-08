@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "../styles/input.css";
 import Counter from "./Counter";
 function Input({ onAddItems }) {
-  const [name, setName] = useState("gab");
+  const [name, setName] = useState("");
   const [quantity, setQuantity] = useState(1);
 
   function handleSubmit(e) {

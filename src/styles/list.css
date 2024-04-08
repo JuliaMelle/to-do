@@ -46,6 +46,7 @@
   cursor: pointer;
 }
 
+
 .MdDelete {
   background-color: transparent;
   border: none;
@@ -78,4 +79,28 @@
   padding-right: 0px;
 
   width: 180px;
+}
+
+.green {
+  color: green;
+}
+
+.down {
+  padding-right: 20px;
+  padding-top: 20px;
+}
+
+@media only screen and (max-width: 600px) {
+  .input-group {
+    width: 80%;
+  }
+
+  .card {
+    width: 100%;
+  }
+
+  .pad {
+    padding-right: 10px;
+  }
+
 }

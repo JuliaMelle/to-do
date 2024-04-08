@@ -21,7 +21,7 @@ function Counter() {
   };
 
   return (
-    <div className="number-control">
+    <div className="custom-select">
       <div className="number-left" onClick={decrement}>
         {/* No content needed here, the CSS will handle the "-" */}
       </div>
@@ -32,7 +32,11 @@ function Counter() {
         readOnly // Make the input read-only to prevent manual editing
       />
 
-      <select value={quantity} onChange={handleQuantityChange}>
+      <select
+        value={quantity}
+        onChange={handleQuantityChange}
+        className="select"
+      >
         {Array.from({ length: 30 }, (_, i) => i + 1).map((number) => (
           <option value={number} key={number}>
             {number}

@@ -20,10 +20,10 @@ function List({ items, onCheck, onDelete }) {
 
   return (
     <ul className="todoList">
-      <button onClick={() => setSortMethod("name")} className="FaEdit">
+      <button onClick={() => setSortMethod("name")} className="FaEdit down">
         <FaSortAlphaDown />
       </button>
-      <button onClick={() => setSortMethod("quantity")} className="FaEdit">
+      <button onClick={() => setSortMethod("quantity")} className="FaEdit down">
         <FaSortNumericDown />
       </button>
 
